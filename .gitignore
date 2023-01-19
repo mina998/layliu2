@@ -1,0 +1,10 @@
+*.spec
+build
+dist
+t.py
+__pycache__
+0000
+temp
+cmd/ffmpeg.exe
+.idea
+test.py

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="ico">
+    <file>images/bug.png</file>
+    <file>images/folder.png</file>
+    <file>images/qiezi.png</file>
+  </qresource>
+</RCC>

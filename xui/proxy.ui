@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>220</width>
+    <height>190</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>220</width>
+    <height>190</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>220</width>
+    <height>190</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>抓包工具</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="face-kiss" resource="../assets.qrc">
+    <normaloff>:/ico/images/bug.png</normaloff>
+    <disabledon>:/icon/images/bug.png</disabledon>:/ico/images/bug.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>抓包代理服务端口:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="port_proxy">
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="minimum">
+      <number>2000</number>
+     </property>
+     <property name="maximum">
+      <number>60000</number>
+     </property>
+     <property name="value">
+      <number>8080</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layout_midde">
+     <property name="topMargin">
+      <number>8</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="layout_vertical_2">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_proxy_run">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>启动服务</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_system_run">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>开启代理</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>13</width>
+         <height>65</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="layout_vertical_1">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="button_proxy_stop">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>停止服务</string>
+         </property>
+         <property name="row_id" stdset="0">
+          <number>888</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="button_system_stop">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>取消代理</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layout_foot">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <property name="topMargin">
+      <number>3</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>状态:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_status_msg">
+       <property name="text">
+        <string>服务未运行</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
